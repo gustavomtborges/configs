@@ -21,6 +21,11 @@ alias glassfish-start='cd ~/glassfish4/glassfish/bin; ./asadmin start-domain dom
 alias glassfish-stop='cd ~/glassfish4/glassfish/bin; ./asadmin stop-domain domain1 && cd -'
 alias glassfish-log='cd ~/glassfish4/glassfish/domains/domain1/logs; cat server.log && cd -'
 alias glassfish-cleanLog='cd ~/glassfish4/glassfish/domains/domain1/logs; truncate -s0 server.log && cd -'
+alias sql-server-start='systemctl start mssql-server'
+alias sql-server-stop='systemctl stop mssql-server'
+alias sql-server-status='systemctl status mssql-server'
+
+
 #
 # Locations
 alias apache-sites='cd /var/www/html'
