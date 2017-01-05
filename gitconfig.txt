@@ -1,0 +1,15 @@
+[user]
+	name = Gustavo M T Borges
+	email = gustavo.mtborges@gmail.com
+[alias]
+	st = status -s
+	lg = log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+
+	cm = commit -m
+	co = checkout
+	br = branch
+	aa = add -A
+[push]
+	default = simple
+[color]
+	ui = true
