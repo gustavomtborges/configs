@@ -15,10 +15,12 @@
 # Copy and Paste
 alias cc='xclip -selection clipboard'
 alias cv='xclip -o -selection clipboard'
+
 #
-# Start apps
+# Services
 
 ## Glassfish 4
+alias glassfish-domain='cd $HOME/glassfish4/glassfish/domains'
 alias glassfish-start='cd $HOME/glassfish4/glassfish/bin; ./asadmin start-domain domain1 && cd -'
 alias glassfish-stop='cd $HOME/glassfish4/glassfish/bin; ./asadmin stop-domain domain1 && cd -'
 alias glassfish-log='cd $HOME/glassfish4/glassfish/domains/domain1/logs; cat server.log && cd -'
