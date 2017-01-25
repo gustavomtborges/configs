@@ -15,3 +15,5 @@
 	ui = true
 [core]
 	editor = vim
+	autocrlf = false
+	eof = lf
