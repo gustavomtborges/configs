@@ -50,7 +50,8 @@ alias keyboard-restart='ibus-daemon -rd'
 #
 # CUSTOM EXPORT
 export ANDROID_HOME=$HOME/android/sdk
-export PATH=$PATH:$JAVA_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export NPM_RUN=./node_modules/.bin
+export PATH=$PATH:$JAVA_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$NPM_RUN
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
