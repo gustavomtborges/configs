@@ -30,6 +30,7 @@ alias glassfish-cleanLog='cd $HOME/glassfish4/glassfish/domains/domain1/logs; tr
 alias sql-server-start='systemctl start mssql-server'
 alias sql-server-stop='systemctl stop mssql-server'
 alias sql-server-status='systemctl status mssql-server'
+alias sql-connect-local='sqlcmd -S localhost -U sa -P 'Dba@4sert''
 
 #
 # Locations
