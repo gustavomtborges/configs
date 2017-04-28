@@ -3,8 +3,7 @@
 	email = gustavo.mtborges@gmail.com
 [alias]
 	st = status -s
-	lg = log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-
+	lg = log --oneline --decorate --graph --all 
 	cm = commit -m
 	co = checkout
 	br = branch
