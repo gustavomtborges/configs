@@ -1,2 +1,3 @@
-syntax=on
+syntax on
 set bg=dark
+set number
