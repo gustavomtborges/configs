@@ -3,7 +3,7 @@
 	email = gustavo.mtborges@gmail.com
 [alias]
 	st = status -s
-	lg = log --oneline --decorate --graph --all 
+	lg = log --color --graph --pretty='%C(auto)%h%Creset -%C(auto)%d%Creset %s %C(cyan)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	cm = commit -m
 	co = checkout
 	br = branch
@@ -16,3 +16,5 @@
 	editor = vim
 	autocrlf = false
 	eof = lf
+[branch]
+	autosetuprebase = always
