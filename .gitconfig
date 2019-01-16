@@ -17,3 +17,5 @@
 	eof = lf
 [branch]
 	autosetuprebase = always
+[commit]
+	template = /Users/gustavo/.gitmessage
