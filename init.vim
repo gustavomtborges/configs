@@ -10,8 +10,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 " Go to definition
 Plug 'davidhalter/jedi-vim'
-" Go to char f, F
-Plug 'justinmk/vim-sneak'
 " Manage marks
 Plug 'kshenoy/vim-signature'
 " Surround quotes
@@ -27,6 +25,10 @@ Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'  }
 Plug 'slashmili/alchemist.vim'
+" Show git changes
+Plug 'airblade/vim-gitgutter'
+" Editconfig
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 "" Set properties
@@ -75,11 +77,6 @@ let g:jedi#use_splits_not_buffers = "right"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" Sneak search
-let g:sneak#label = 1
-nmap f <Plug>Sneak_s
-nmap F <Plug>Sneak_S
-
 " Map leader to ,
 let mapleader="\<space>"
 
@@ -110,15 +107,15 @@ if executable('ag')
 endif
 
 " Search files and occurrencies
-nnoremap <c-p> :Files<cr>
+nnoremap <c-p> :FZF -m<cr>
 nnoremap <c-f> :Ag<space>
 " Clean search (highlight)
-nnoremap <silent> <leader>, :noh<cr>
+nnoremap <silent> <C-l> :noh<cr>
 
 "" Buffer nav
 nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <leader>q :bp<CR>
-nnoremap <leader>w :bn<CR>
+nnoremap <silent> <leader>q :bp<CR>
+nnoremap <silent> <leader>w :bn<CR>
 
 "" Close buffer
 nnoremap <leader>c :bd<CR>
@@ -130,6 +127,6 @@ noremap YY "+y<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" Show toggle special chars
+" Toggle special chars
 nnoremap<leader>l :set list!<cr>
 
