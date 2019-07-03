@@ -10,8 +10,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 " Go to definition
 Plug 'davidhalter/jedi-vim'
-" Manage marks
-Plug 'kshenoy/vim-signature'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
