@@ -1,25 +1,45 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
+" Themings
+Plug 'mhartington/oceanic-next'
+Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+" Go to definition
 Plug 'davidhalter/jedi-vim'
+" Go to char f, F
 Plug 'justinmk/vim-sneak'
+" Manage marks
 Plug 'kshenoy/vim-signature'
+" Surround quotes
 Plug 'tpope/vim-surround'
-
+" Syntax highlight
+Plug 'sheerun/vim-polyglot'
+" Fuzzy search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+" Linting
+Plug 'w0rp/ale'
 " Autocomplete codes
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'  }
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'  }
 Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 "" Set properties
+
+" Move unsave buffers
 set hidden
+" Show command preview
 set inccommand=split
 " True Colors enable.
 set termguicolors
+" show chars
+set list
+set listchars=tab:→\ ,trail:∙,eol:¬
 
 " Set tab = 4
 set tabstop=4
@@ -28,6 +48,11 @@ set shiftwidth=4
 " Number lines
 set number
 set relativenumber
+
+" Theming
+colorscheme gruvbox
+set background=dark
+syntax on
 
 "" Use deoplete.
 let g:deoplete#enable_at_startup = 1
@@ -39,8 +64,6 @@ let g:NERDTreeWinSize = 50
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
-" Theming
-colorscheme gruvbox  
 
 " disable autocompletion, cause we use deoplete for completion
 let g:jedi#completions_enabled = 0
@@ -61,20 +84,52 @@ nmap F <Plug>Sneak_S
 let mapleader="\<space>"
 
 "" Keybinds
-nnoremap <leader>; A;<esc>
+" Edit and load neovim config
+nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+
+" Remap Esc
 imap jj <esc>
+
+" Add semi colon
+nnoremap <leader>; A;<esc>
 
 "" Split
 noremap <leader>h :<C-u>split<CR>
 noremap <leader>v :<C-u>vsplit<CR>
 
-"" Clean search (highlight)
+"" fzf.vim
+set wildmode=list:longest,list:full
+set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
+let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
+
+" The Silver Searcher
+if executable('ag')
+  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
+
+" Search files and occurrencies
+nnoremap <c-p> :Files<cr>
+nnoremap <c-f> :Ag<space>
+" Clean search (highlight)
 nnoremap <silent> <leader>, :noh<cr>
 
 "" Buffer nav
-noremap <leader>q :bp<CR>
-noremap <leader>w :bn<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <leader>q :bp<CR>
+nnoremap <leader>w :bn<CR>
 
 "" Close buffer
-noremap <leader>c :bd<CR>
+nnoremap <leader>c :bd<CR>
+
+" Copy from clipborad
+noremap YY "+y<CR>
+
+"" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" Show toggle special chars
+nnoremap<leader>l :set list!<cr>
 
