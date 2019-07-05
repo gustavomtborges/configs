@@ -101,10 +101,6 @@ imap jj <esc>
 " Clean search highlight on enter
 map <silent> <cr> :noh<cr>
 
-"" Split
-noremap <leader>h :<C-u>split<CR>
-noremap <leader>v :<C-u>vsplit<CR>
-
 "" fzf.vim
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
