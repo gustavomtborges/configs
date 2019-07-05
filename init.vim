@@ -49,6 +49,18 @@ set shiftwidth=4
 set number
 set relativenumber
 
+" Highlight search
+set hlsearch
+" Incremental search
+set incsearch
+" Ignore case when searching
+set ignorecase
+" Ignore case when searching lowercase
+set smartcase
+
+" Highlight cursor position
+set cursorline
+
 " Theming
 colorscheme gruvbox
 set background=dark
@@ -86,8 +98,8 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 " Remap Esc
 imap jj <esc>
 
-" Add semi colon
-nnoremap <leader>; A;<esc>
+" Clean search highlight on enter
+map <silent> <cr> :noh<cr>
 
 "" Split
 noremap <leader>h :<C-u>split<CR>
