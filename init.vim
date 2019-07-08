@@ -2,14 +2,15 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Status bar
 Plug 'vim-airline/vim-airline'
+" Tree explorer
 Plug 'scrooloose/nerdtree'
+" Tagbar structure
+Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 " Themings
 Plug 'mhartington/oceanic-next'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
-" Go to definition
-Plug 'davidhalter/jedi-vim'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -19,14 +20,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Linting
 Plug 'w0rp/ale'
-" Autocomplete codes
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'  }
-Plug 'slashmili/alchemist.vim'
 " Show git changes
 Plug 'airblade/vim-gitgutter'
 " Editconfig
 Plug 'editorconfig/editorconfig-vim'
+" Code completition
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 "" Set properties
@@ -66,28 +65,15 @@ colorscheme gruvbox
 set background=dark
 syntax on
 
-"" Use deoplete.
-let g:deoplete#enable_at_startup = 1
-" let g:deoplete#disable_auto_complete = 1
-
 " NERDTree Configuration
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 50
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
-
-
-" disable autocompletion, cause we use deoplete for completion
-let g:jedi#completions_enabled = 0
-
-" open the go-to function in split, not another buffer
-let g:jedi#use_splits_not_buffers = "right"
 
 " Always show buffer name
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" Map leader to ,
+" Map leader to Space
 let mapleader="\<space>"
 
 "" Keybinds
@@ -101,10 +87,15 @@ imap jj <esc>
 " Clean search highlight on enter
 map <silent> <cr> :noh<cr>
 
+" NerdTree binds
+nnoremap <silent> <F2> :NERDTreeFind<CR>
+nnoremap <silent> <F3> :NERDTreeToggle<CR>
+
+" Tagbar bind
+nnoremap <silent> <F4> :TagbarToggle<cr>
+
 "" fzf.vim
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
+let $FZF_DEFAULT_COMMAND = "rg --files --follow --hidden"
 
 " The Silver Searcher
 if executable('ag')
@@ -113,7 +104,7 @@ if executable('ag')
 endif
 
 " Search files and occurrencies
-nnoremap <c-p> :FZF -m<cr>
+nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 " Clean search (highlight)
 nnoremap <silent> <C-l> :noh<cr>
@@ -132,7 +123,4 @@ noremap YY "+y<CR>
 "" Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-
-" Toggle special chars
-nnoremap<leader>l :set list!<cr>
 
