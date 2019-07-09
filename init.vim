@@ -4,8 +4,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 " Tree explorer
 Plug 'scrooloose/nerdtree'
-" Tagbar structure
-Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 " Themings
 Plug 'mhartington/oceanic-next'
@@ -87,9 +85,6 @@ imap jj <esc>
 " NerdTree binds
 nnoremap <silent> <F2> :NERDTree<cr>
 
-" Tagbar bind
-nnoremap <silent> <F4> :TagbarToggle<cr>
-
 "" fzf.vim
 let $FZF_DEFAULT_COMMAND = "rg --files --follow --hidden"
 
@@ -115,8 +110,4 @@ nnoremap <leader>c :bd<cr>
 
 " Copy from clipborad
 noremap YY "+y<cr>
-
-"" Move visual block
-vnoremap J :m '>+1<cr>gv=gv
-vnoremap K :m '<-2<cr>gv=gv
 
