@@ -84,9 +84,6 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 " Remap Esc
 imap jj <esc>
 
-" Clean search highlight on enter
-map <silent> <cr> :noh<cr>
-
 " NerdTree binds
 nnoremap <silent> <F2> :NERDTree<cr>
 
@@ -104,7 +101,7 @@ endif
 
 " Search files and occurrencies
 nnoremap <c-p> :Files<cr>
-nnoremap <c-F> :Ag<space>
+nnoremap <leader>f :Ag<space>
 " Clean search (highlight)
 nnoremap <silent> <C-l> :noh<cr>
 
