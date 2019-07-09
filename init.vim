@@ -88,8 +88,7 @@ imap jj <esc>
 map <silent> <cr> :noh<cr>
 
 " NerdTree binds
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <F2> :NERDTree<cr>
 
 " Tagbar bind
 nnoremap <silent> <F4> :TagbarToggle<cr>
@@ -105,22 +104,22 @@ endif
 
 " Search files and occurrencies
 nnoremap <c-p> :Files<cr>
-nnoremap <c-f> :Ag<space>
+nnoremap <c-F> :Ag<space>
 " Clean search (highlight)
 nnoremap <silent> <C-l> :noh<cr>
 
 "" Buffer nav
-nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>q :bp<CR>
-nnoremap <silent> <leader>w :bn<CR>
+nnoremap <silent> <leader>b :Buffers<cr>
+nnoremap <silent> <leader>q :bp<cr>
+nnoremap <silent> <leader>w :bn<cr>
 
 "" Close buffer
-nnoremap <leader>c :bd<CR>
+nnoremap <leader>c :bd<cr>
 
 " Copy from clipborad
-noremap YY "+y<CR>
+noremap YY "+y<cr>
 
 "" Move visual block
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<cr>gv=gv
+vnoremap K :m '<-2<cr>gv=gv
 

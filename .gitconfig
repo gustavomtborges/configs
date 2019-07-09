@@ -7,6 +7,7 @@
 	cm = commit
 	co = checkout
 	br = branch
+	dw = diff --word-diff
 [push]
 	default = simple
 [color]
