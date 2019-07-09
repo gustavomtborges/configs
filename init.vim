@@ -11,6 +11,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'mhartington/oceanic-next'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'nightsense/carbonized'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -61,7 +62,7 @@ set smartcase
 set cursorline
 
 " Theming
-colorscheme gruvbox
+colorscheme carbonized-dark
 set background=dark
 syntax on
 
