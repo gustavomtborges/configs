@@ -6,7 +6,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 " Themings
-Plug 'mhartington/oceanic-next'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 " Surround quotes
@@ -59,9 +58,9 @@ set smartcase
 set cursorline
 
 " Theming
-colorscheme nord
+colorscheme gruvbox
 set background=dark
-syntax on
+syntax enable
 
 " NERDTree Configuration
 let g:NERDTreeWinPos = "right"
