@@ -46,8 +46,6 @@ set shiftwidth=4
 set number
 set relativenumber
 
-" Highlight search
-set hlsearch
 " Incremental search
 set incsearch
 " Ignore case when searching
@@ -57,6 +55,9 @@ set smartcase
 
 " Highlight cursor position
 set cursorline
+
+" Auto indent
+set smartindent
 
 " Theming
 colorscheme gruvbox
