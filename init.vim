@@ -63,6 +63,9 @@ colorscheme gruvbox
 set background=dark
 syntax enable
 
+" Map leader to Space
+let mapleader="\<space>"
+
 " NERDTree Configuration
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 50
@@ -71,8 +74,14 @@ let g:NERDTreeWinSize = 50
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" Map leader to Space
-let mapleader="\<space>"
+let g:ale_linters = {
+\  'javascript': ['eslint'],
+\}
+
+let g:ale_fixers = {
+\  'javascript': ['prettier'],
+\  'css': ['prettier'],
+\}
 
 "" Keybinds
 " Edit and load neovim config
