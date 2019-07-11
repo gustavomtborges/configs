@@ -24,6 +24,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 " Code completition
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Git integration
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 "" Set properties
