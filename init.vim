@@ -9,6 +9,7 @@ Plug 'jiangmiao/auto-pairs'
 " Themings
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'mhartington/oceanic-next'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -26,6 +27,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Git integration
 Plug 'tpope/vim-fugitive'
+" File icons
+Plug 'ryanoasis/vim-devicons'
+
 
 call plug#end()
 "" Set properties
@@ -58,9 +62,9 @@ set smartindent
 set updatetime=250
 
 " Theming
-colorscheme gruvbox
+colorscheme OceanicNext
 set background=dark
-syntax enable
+syntax on
 
 " Map leader to Space
 let mapleader="\<space>"
@@ -70,6 +74,8 @@ let g:NERDTreeWinSize = 50
 " Always show buffer name
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_theme='oceanicnext'
+let g:airline_powerline_fonts = 1
 
 let g:ale_linters = {
 \  'javascript': ['eslint'],
