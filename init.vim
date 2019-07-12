@@ -41,7 +41,7 @@ set inccommand=split
 " True Colors enable.
 set termguicolors
 " show chars
-set list
+" set list
 set listchars=tab:→\ ,trail:∙,eol:¬
 " Set tab = 4
 set tabstop=4
@@ -56,7 +56,7 @@ set ignorecase
 " Ignore case when searching lowercase
 set smartcase
 " Highlight cursor position
-set cursorline
+" set cursorline
 " Auto indent
 set smartindent
 set updatetime=250
