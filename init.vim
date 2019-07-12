@@ -39,27 +39,23 @@ set termguicolors
 " show chars
 set list
 set listchars=tab:→\ ,trail:∙,eol:¬
-
 " Set tab = 4
 set tabstop=4
 set shiftwidth=4
-
 " Number lines
 set number
 set relativenumber
-
 " Incremental search
 set incsearch
 " Ignore case when searching
 set ignorecase
 " Ignore case when searching lowercase
 set smartcase
-
 " Highlight cursor position
 set cursorline
-
 " Auto indent
 set smartindent
+set updatetime=250
 
 " Theming
 colorscheme gruvbox
@@ -68,11 +64,9 @@ syntax enable
 
 " Map leader to Space
 let mapleader="\<space>"
-
 " NERDTree Configuration
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 50
-
 " Always show buffer name
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
@@ -121,5 +115,6 @@ nnoremap <silent> <leader>w :bn<cr>
 nnoremap <leader>c :bd<cr>
 
 " Copy from clipborad
-noremap YY "+y<cr>
+vnoremap YY "+y<cr>
 
+nnoremap <F4> :ALEFix<cr>
