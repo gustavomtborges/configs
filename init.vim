@@ -30,7 +30,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 " File icons
 Plug 'ryanoasis/vim-devicons'
-
+" Comments
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 "" Set properties
