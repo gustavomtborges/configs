@@ -10,6 +10,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -33,7 +34,7 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 "" Set properties
-
+set encoding=UTF-8
 " Move unsave buffers
 set hidden
 " Show command preview
@@ -60,9 +61,11 @@ set smartcase
 " Auto indent
 set smartindent
 set updatetime=250
+" Use mouse all modes
+set mouse=a
 
 " Theming
-colorscheme OceanicNext
+colorscheme challenger_deep
 set background=dark
 syntax on
 
