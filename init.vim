@@ -44,7 +44,7 @@ set inccommand=split
 set termguicolors
 " show chars
 " set list
-set listchars=tab:→\ ,trail:∙,eol:¬
+set listchars=tab:▶\ ,trail:∙,eol:¬
 " Set tab = 4
 set tabstop=4
 set shiftwidth=4
@@ -66,7 +66,7 @@ set updatetime=250
 set mouse=a
 
 " Theming
-colorscheme challenger_deep
+colorscheme OceanicNext
 set background=dark
 syntax on
 
