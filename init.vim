@@ -122,7 +122,7 @@ nnoremap <silent> <leader>q :bp<cr>
 nnoremap <silent> <leader>w :bn<cr>
 
 "" Close buffer
-nnoremap <leader>c :bd<cr>
+nnoremap <leader>x :bd<cr>
 
 " Copy from clipborad
 vnoremap YY "+y<cr>
