@@ -66,7 +66,7 @@ set updatetime=250
 set mouse=a
 
 " Theming
-colorscheme OceanicNext
+colorscheme challenger_deep
 set background=dark
 syntax on
 
