@@ -103,13 +103,7 @@ imap jj <esc>
 nnoremap <silent> <F2> :NERDTree<cr>
 
 "" fzf.vim
-let $FZF_DEFAULT_COMMAND = "rg --files --follow --hidden"
-
-" The Silver Searcher
-if executable('ag')
-  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
-  set grepprg=ag\ --nogroup\ --nocolor
-endif
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
 " Search files and occurrencies
 nnoremap <c-p> :Files<cr>
