@@ -11,6 +11,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'ayu-theme/ayu-vim'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -34,6 +35,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
+
 "" Set properties
 set encoding=UTF-8
 " Move unsave buffers
@@ -66,7 +68,8 @@ set updatetime=250
 set mouse=a
 
 " Theming
-colorscheme challenger_deep
+let ayucolor="mirage"
+colorscheme ayu
 set background=dark
 syntax on
 
@@ -123,3 +126,8 @@ nnoremap <leader>x :bd<cr>
 vnoremap YY "+y<cr>
 
 nnoremap <F4> :ALEFix<cr>
+
+" Coc binds
+" Trigger auto completition manually
+inoremap <silent><expr> <c-space> coc#refresh()
+
