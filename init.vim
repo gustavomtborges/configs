@@ -129,4 +129,5 @@ nnoremap <F4> :ALEFix<cr>
 " Coc binds
 " Trigger auto completition manually
 inoremap <silent><expr> <c-space> coc#refresh()
-
+nmap <silent><leader>gd <Plug>(coc-definition)
+nmap <silent><leader>gr <Plug>(coc-references)
