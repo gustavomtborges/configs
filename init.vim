@@ -131,3 +131,6 @@ nnoremap <F4> :ALEFix<cr>
 inoremap <silent><expr> <c-space> coc#refresh()
 nmap <silent><leader>gd <Plug>(coc-definition)
 nmap <silent><leader>gr <Plug>(coc-references)
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
