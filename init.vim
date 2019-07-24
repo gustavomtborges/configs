@@ -99,7 +99,7 @@ nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 " Remap Esc
-imap jj <esc>
+imap jk <esc>
 
 " NerdTree binds
 nnoremap <silent> <F2> :NERDTree<cr>
