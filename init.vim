@@ -45,7 +45,7 @@ set inccommand=split
 " True Colors enable.
 set termguicolors
 " show chars
-" set list
+set list
 set listchars=tab:→\ ,trail:∙,eol:¬
 " Set tab = 4
 set tabstop=4
