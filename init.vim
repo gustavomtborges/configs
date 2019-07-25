@@ -27,8 +27,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 " Code completition
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Git integration
-Plug 'tpope/vim-fugitive'
 " File icons
 Plug 'ryanoasis/vim-devicons'
 " Comments
@@ -68,8 +66,8 @@ set updatetime=250
 set mouse=a
 
 " Theming
-let ayucolor="mirage"
-colorscheme challenger_deep
+let ayucolor="dark"
+colorscheme ayu
 set background=dark
 syntax on
 
