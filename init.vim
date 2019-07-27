@@ -47,7 +47,7 @@ set list
 set listchars=tab:→\ ,trail:∙,eol:¬
 " Set tab = 4
 set tabstop=4
-set shiftwidth=4
+set shiftwidth=2
 " Number lines
 set number
 set relativenumber
@@ -89,6 +89,7 @@ let g:ale_fixers = {
 \  'json': ['prettier'],
 \  'javascript': ['prettier'],
 \  'css': ['prettier'],
+\  'yaml': ['prettier']
 \}
 
 "" Keybinds
