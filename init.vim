@@ -66,7 +66,7 @@ set updatetime=250
 set mouse=a
 
 " Theming
-let ayucolor="dark"
+let ayucolor="mirage"
 colorscheme ayu
 set background=dark
 syntax on
