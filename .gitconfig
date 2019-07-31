@@ -9,6 +9,7 @@
 	co = checkout
 	br = branch
 	dw = diff --word-diff
+	ds = diff --staged
 [push]
 	default = simple
 [color]
