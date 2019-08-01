@@ -10,6 +10,8 @@
 	br = branch
 	dw = diff --word-diff
 	ds = diff --staged
+	ft = fetch
+	rb = rebase
 [push]
 	default = simple
 [color]
