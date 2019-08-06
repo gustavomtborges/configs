@@ -5,7 +5,6 @@ Plug 'vim-airline/vim-airline'
 " Tree explorer
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'jiangmiao/auto-pairs'
 " Themings
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
