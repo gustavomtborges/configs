@@ -44,6 +44,8 @@ set termguicolors
 " show chars
 set list
 set listchars=tab:→\ ,trail:∙,eol:¬
+" Highlight cursor position
+set cursorline
 " Set tab = 4
 set tabstop=4
 set shiftwidth=2
@@ -56,8 +58,6 @@ set incsearch
 set ignorecase
 " Ignore case when searching lowercase
 set smartcase
-" Highlight cursor position
-" set cursorline
 " Auto indent
 set smartindent
 set updatetime=250
