@@ -66,7 +66,7 @@ set mouse=a
 
 " Theming
 let ayucolor="mirage"
-colorscheme ayu
+colorscheme gruvbox
 set background=dark
 syntax on
 
