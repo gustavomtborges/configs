@@ -66,7 +66,7 @@ set mouse=a
 
 " Theming
 let ayucolor="mirage"
-colorscheme challenger_deep
+colorscheme ayu
 set background=dark
 syntax on
 
