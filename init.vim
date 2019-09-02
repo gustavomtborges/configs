@@ -11,6 +11,7 @@ Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'ayu-theme/ayu-vim'
+Plug 'Rigellute/rigel'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -39,8 +40,6 @@ set encoding=UTF-8
 set hidden
 " Show command preview
 set inccommand=split
-" True Colors enable.
-set termguicolors
 " show chars
 set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -65,10 +64,12 @@ set updatetime=250
 set mouse=a
 
 " Theming
+" True Colors enable.
+set termguicolors
 let ayucolor="mirage"
-colorscheme ayu
+colorscheme rigel
 set background=dark
-syntax on
+syntax enable
 
 " Map leader to Space
 let mapleader="\<space>"
