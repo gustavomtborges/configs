@@ -41,7 +41,7 @@ set hidden
 " Show command preview
 set inccommand=split
 " show chars
-set list
+" set list
 set listchars=tab:→\ ,trail:∙,eol:¬
 " Highlight cursor position
 set cursorline
