@@ -47,6 +47,7 @@ set listchars=tab:→\ ,trail:∙,eol:¬
 set cursorline
 " Set tab = 2
 set tabstop=2
+set shiftwidth=2
 " Number lines
 set number
 set relativenumber
