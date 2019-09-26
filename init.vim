@@ -104,8 +104,6 @@ imap jk <esc>
 nnoremap <silent> <F2> :NERDTree<cr>
 
 "" fzf.vim
-let $FZF_DEFAULT_COMMAND = 'rg --hidden --ignore .git -g ""'
-
 " Search files and occurrencies
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Rg<space>
