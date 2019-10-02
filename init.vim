@@ -89,7 +89,8 @@ let g:ale_fixers = {
 \  'json': ['prettier'],
 \  'javascript': ['prettier'],
 \  'css': ['prettier'],
-\  'yaml': ['prettier']
+\  'yaml': ['prettier'],
+\  'xml': ['xmllint']
 \}
 
 "" Keybinds
