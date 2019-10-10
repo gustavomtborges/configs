@@ -12,6 +12,8 @@ Plug 'mhartington/oceanic-next'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'ayu-theme/ayu-vim'
 Plug 'Rigellute/rigel'
+Plug 'arzg/vim-substrata'
+Plug 'cocopon/iceberg.vim'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -120,7 +122,7 @@ nnoremap <silent> <leader>q :bp<cr>
 nnoremap <silent> <leader>w :bn<cr>
 
 "" Close buffer
-nnoremap <leader>x :bd<cr>
+nnoremap <leader>x :bp\|bd #<cr>
 
 " Copy from clipborad
 vnoremap YY "+y<cr>
