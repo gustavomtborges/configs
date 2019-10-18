@@ -4,7 +4,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 " Tree explorer
 Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
 " Themings
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
