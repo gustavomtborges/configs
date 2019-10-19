@@ -28,8 +28,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 " Code completition
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" File icons
-Plug 'ryanoasis/vim-devicons'
 " Comments
 Plug 'scrooloose/nerdcommenter'
 
