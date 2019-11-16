@@ -69,7 +69,7 @@ set mouse=a
 " True Colors enable.
 set termguicolors
 let ayucolor="mirage"
-colorscheme Nord
+colorscheme nord
 set background=dark
 syntax enable
 
