@@ -83,18 +83,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 
-let g:ale_linters = {
-\  'javascript': ['eslint'],
-\}
-
-let g:ale_fixers = {
-\  'json': ['prettier'],
-\  'javascript': ['prettier'],
-\  'css': ['prettier'],
-\  'yaml': ['prettier'],
-\  'xml': ['xmllint']
-\}
-
 "" Keybinds
 " Edit and load neovim config
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
