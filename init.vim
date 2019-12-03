@@ -4,7 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 " Tree explorer
 Plug 'scrooloose/nerdtree'
-" Themings
+" Themes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
@@ -61,7 +61,6 @@ set mouse=a
 
 "" Theming
 set termguicolors
-let g:monotone_secondary_hue_offset = 20 " Offset secondary colors by 200 degrees
 colorscheme monotone
 " show chars
 set list
