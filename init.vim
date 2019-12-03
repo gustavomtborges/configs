@@ -61,6 +61,7 @@ set mouse=a
 
 "" Theming
 set termguicolors
+let g:monotone_secondary_hue_offset = 20 " Offset secondary colors by 200 degrees
 colorscheme monotone
 " show chars
 set list
