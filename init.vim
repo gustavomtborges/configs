@@ -13,7 +13,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'Rigellute/rigel'
 Plug 'arzg/vim-substrata'
 Plug 'cocopon/iceberg.vim'
-Plug 'fxn/vim-monochrome'
+Plug 'Lokaltog/vim-monotone'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -70,7 +70,7 @@ set mouse=a
 " True Colors enable.
 set termguicolors
 let ayucolor="mirage"
-colorscheme nord
+colorscheme monotone
 set background=dark
 syntax enable
 
