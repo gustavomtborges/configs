@@ -14,6 +14,7 @@ Plug 'Rigellute/rigel'
 Plug 'arzg/vim-substrata'
 Plug 'cocopon/iceberg.vim'
 Plug 'Lokaltog/vim-monotone'
+Plug 'fxn/vim-monochrome'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -40,20 +41,12 @@ set encoding=UTF-8
 set hidden
 " Show command preview
 set inccommand=split
-" show chars
-set list
-set listchars=tab:→\ ,trail:∙,eol:¬
-" Highlight cursor position
-set cursorline
 " Set tab columns = 4
 set tabstop=4
 " Ident 2 by 2 
 set shiftwidth=2
 " Change tab to spaces
 set expandtab
-" Number lines
-set number
-set relativenumber
 " Incremental search
 set incsearch
 " Ignore case when searching
@@ -66,25 +59,32 @@ set updatetime=250
 " Use mouse all modes
 set mouse=a
 
-" Theming
-" True Colors enable.
+"" Theming
 set termguicolors
-let ayucolor="mirage"
 colorscheme monotone
-set background=dark
-syntax enable
+" show chars
+set list
+set listchars=tab:→\ ,trail:∙,eol:¬
+" Highlight cursor position
+set cursorline
 
-" Map leader to Space
-let mapleader="\<space>"
+"" Display
+" Number lines
+set number
+set relativenumber
 " NERDTree Configuration
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 50
-" Always show buffer name
+" Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'nord'
 
 "" Keybinds
+" Map leader to Space
+let mapleader="\<space>"
+
 " Edit and load neovim config
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
