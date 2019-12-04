@@ -2,6 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Status bar
 Plug 'itchyny/lightline.vim'
+Plug 'mengelbrecht/lightline-bufferline'
 " Tree explorer
 Plug 'scrooloose/nerdtree'
 " Themes
@@ -56,7 +57,6 @@ set mouse=a
 
 "" Theming
 set termguicolors
-let g:monotone_secondary_hue_offset = 20
 colorscheme monotone
 " show chars
 "set list
@@ -65,6 +65,16 @@ set listchars=tab:→\ ,trail:∙,eol:¬
 set cursorline
 " LightLine
 set noshowmode
+" BufferLine
+set showtabline=2
+let g:lightline#bufferline#show_number  = 1
+let g:lightline#bufferline#shorten_path = 0
+let g:lightline#bufferline#unnamed      = '[No Name]'
+
+let g:lightline                  = {}
+let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 "" Display
 " Number lines
