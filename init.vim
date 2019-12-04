@@ -1,20 +1,15 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Status bar
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 " Tree explorer
 Plug 'scrooloose/nerdtree'
 " Themes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'ayu-theme/ayu-vim'
-Plug 'Rigellute/rigel'
-Plug 'arzg/vim-substrata'
-Plug 'cocopon/iceberg.vim'
 Plug 'Lokaltog/vim-monotone'
-Plug 'fxn/vim-monochrome'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -61,12 +56,15 @@ set mouse=a
 
 "" Theming
 set termguicolors
+let g:monotone_secondary_hue_offset = 20
 colorscheme monotone
 " show chars
-set list
+"set list
 set listchars=tab:→\ ,trail:∙,eol:¬
 " Highlight cursor position
 set cursorline
+" LightLine
+set noshowmode
 
 "" Display
 " Number lines
@@ -75,11 +73,6 @@ set relativenumber
 " NERDTree Configuration
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 50
-" Airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'nord'
 
 "" Keybinds
 " Map leader to Space
