@@ -1,9 +1,9 @@
 <scheme name="Monotone" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2019-12-05T15:03:23</property>
-    <property name="ide">idea</property>
+    <property name="created">2019-12-05T15:01:45</property>
+    <property name="ide">DataGrip</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2019-12-05T15:03:32</property>
+    <property name="modified">2019-12-05T15:02:13</property>
     <property name="originalScheme">Monotone</property>
   </metaInfo>
   <attributes>
@@ -11,6 +11,11 @@
       <value>
         <option name="FOREGROUND" value="ffffff" />
         <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CONSOLE_RANGE_TO_EXECUTE">
+      <value>
+        <option name="EFFECT_COLOR" value="636b65" />
       </value>
     </option>
     <option name="CSS.IMPORTANT">
@@ -164,7 +169,7 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="JAVA_KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="JAVA_KEYWORD" baseAttributes="" />
     <option name="JAVA_NUMBER">
       <value>
         <option name="FOREGROUND" value="6897bb" />
@@ -189,7 +194,7 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="JSP_DIRECTIVE_NAME" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="JSP_DIRECTIVE_NAME" baseAttributes="" />
     <option name="XML_PROLOGUE">
       <value>
         <option name="FOREGROUND" value="ffffff" />
