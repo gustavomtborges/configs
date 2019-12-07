@@ -1,9 +1,9 @@
 <scheme name="Monotone" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2019-12-06T09:57:42</property>
+    <property name="created">2019-12-07T11:17:33</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2019-12-06T09:57:49</property>
+    <property name="modified">2019-12-07T11:17:47</property>
     <property name="originalScheme">Monotone</property>
   </metaInfo>
   <attributes>
@@ -78,7 +78,9 @@
       </value>
     </option>
     <option name="DEFAULT_INSTANCE_FIELD">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="ffffff" />
+      </value>
     </option>
     <option name="DEFAULT_INSTANCE_METHOD">
       <value>
