@@ -1,9 +1,9 @@
 <scheme name="Monotone" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2019-12-12T10:19:41</property>
+    <property name="created">2019-12-23T10:52:43</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2019-12-12T10:19:48</property>
+    <property name="modified">2019-12-23T10:52:53</property>
     <property name="originalScheme">Monotone</property>
   </metaInfo>
   <attributes>
@@ -61,7 +61,11 @@
         <option name="FOREGROUND" value="ffffff" />
       </value>
     </option>
-    <option name="DEFAULT_FUNCTION_DECLARATION" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_FUNCTION_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="ffffff" />
+      </value>
+    </option>
     <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
@@ -132,11 +136,10 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="JS.GLOBAL_FUNCTION">
-      <value />
-    </option>
+    <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="JS.GLOBAL_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
     <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD" />
+    <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="JSP_DIRECTIVE_NAME" baseAttributes="DEFAULT_KEYWORD" />
     <option name="PROPERTIES.INVALID_STRING_ESCAPE">
       <value>
