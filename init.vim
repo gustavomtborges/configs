@@ -57,7 +57,7 @@ set mouse=a
 
 "" Theming
 set termguicolors
-colorscheme monotone
+colorscheme gruvbox
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
