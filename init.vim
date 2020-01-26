@@ -11,6 +11,7 @@ Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
 Plug 'ayu-theme/ayu-vim'
 Plug 'Lokaltog/vim-monotone'
+Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -57,7 +58,8 @@ set mouse=a
 
 "" Theming
 set termguicolors
-colorscheme gruvbox
+let g:gruvbox_material_background = 'medium'
+colorscheme gruvbox-material
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
