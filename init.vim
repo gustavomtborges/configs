@@ -59,7 +59,7 @@ set mouse=a
 "" Theming
 set termguicolors
 let g:gruvbox_material_background = 'medium'
-colorscheme gruvbox-material
+colorscheme gruvbox
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
