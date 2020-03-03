@@ -11,7 +11,7 @@ Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
 Plug 'ayu-theme/ayu-vim'
 Plug 'Lokaltog/vim-monotone'
-Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
+Plug 'haishanh/night-owl.vim'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -58,8 +58,8 @@ set mouse=a
 
 "" Theming
 set termguicolors
-let g:gruvbox_material_background = 'medium'
-colorscheme gruvbox
+syntax enable
+colorscheme night-owl
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -77,6 +77,7 @@ let g:lightline                  = {}
 let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
+let g:lightline.colorscheme = 'nightowl'
 
 "" Display
 " Number lines
