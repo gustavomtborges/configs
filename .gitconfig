@@ -3,8 +3,8 @@
 	email = gustavo.mtborges@gmail.com
 [alias]
 	st = status
-	lg = log  --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(dim blue)%an %C(green)%cr' --abbrev-commit --date=relative
-	lga = log --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(dim blue)%an %C(green)%cr' --abbrev-commit --date=relative --all
+	lg = log  --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>' --abbrev-commit --date=relative
+	lga = log --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(bold blue)<%an>' --abbrev-commit --date=relative --all
 	cm = commit
 	co = checkout
 	br = branch
