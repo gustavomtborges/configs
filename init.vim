@@ -59,7 +59,7 @@ set mouse=a
 "" Theming
 set termguicolors
 syntax enable
-colorscheme night-owl
+colorscheme ayu
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -77,7 +77,6 @@ let g:lightline                  = {}
 let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
-let g:lightline.colorscheme = 'nightowl'
 
 "" Display
 " Number lines
