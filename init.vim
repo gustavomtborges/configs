@@ -59,6 +59,7 @@ set mouse=a
 "" Theming
 set termguicolors
 syntax enable
+let ayucolor = "dark" " dark light mirage
 colorscheme ayu
 " show chars
 "set list
