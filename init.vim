@@ -28,7 +28,7 @@ Plug 'editorconfig/editorconfig-vim'
 " Code completition
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Comments
-Plug 'scrooloose/nerdcommenter'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
