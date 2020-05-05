@@ -12,6 +12,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'ayu-theme/ayu-vim'
 Plug 'Lokaltog/vim-monotone'
 Plug 'haishanh/night-owl.vim'
+Plug 'lifepillar/vim-solarized8'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -58,9 +59,10 @@ set mouse=a
 
 "" Theming
 set termguicolors
+set background=light
 syntax enable
-let ayucolor = "dark" " dark light mirage
-colorscheme ayu
+let ayucolor = "light" " dark light mirage
+colorscheme solarized8
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -75,6 +77,7 @@ let g:lightline#bufferline#shorten_path = 0
 let g:lightline#bufferline#unnamed      = '[No Name]'
 
 let g:lightline                  = {}
+let g:lightline.colorscheme      = 'solarized'
 let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
