@@ -95,34 +95,34 @@ let g:NERDTreeWinSize = 50
 let mapleader="\<space>"
 
 " Edit and load neovim config
-nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
-nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<CR>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
 
 " Remap Esc
 imap jk <esc>
 
 " NerdTree binds
-nnoremap <silent> <F2> :NERDTree<cr>
+nnoremap <silent> <F2> :NERDTree<CR>
 
 "" fzf.vim
 " Search files and occurrencies
-nnoremap <leader>p :Files<cr>
+nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>f :Rg<space>
 " Clean search (highlight)
-nnoremap <silent> <C-l> :noh<cr>
+nnoremap <silent> <C-l> :noh<CR>
 
 "" Buffer nav
-nnoremap <silent> <leader>b :Buffers<cr>
-nnoremap <silent> <leader>q :bp<cr>
-nnoremap <silent> <leader>w :bn<cr>
+nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> <leader>q :bp<CR>
+nnoremap <silent> <leader>w :bn<CR>
 
 "" Close buffer
-nnoremap <leader>x :bp\|bd #<cr>
+nnoremap <leader>x :bp\|bd #<CR>
 
 " Copy from clipborad
-vnoremap YY "+y<cr>
+vnoremap YY "+y<CR>
 
-nnoremap <F4> :ALEFix<cr>
+nnoremap <F4> :ALEFix<CR>
 
 " Coc binds
 " Trigger auto completition manually
