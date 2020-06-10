@@ -108,10 +108,8 @@ nnoremap <leader>f :Rg<space>
 " Clean search (highlight)
 nnoremap <silent> <C-l> :noh<CR>
 
-"" Buffer nav
+"" Buffer list
 nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>q :bp<CR>
-nnoremap <silent> <leader>w :bn<CR>
 
 "" Close buffer
 nnoremap <leader>w :bp\|bd #<CR>
