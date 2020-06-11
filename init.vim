@@ -108,11 +108,14 @@ nnoremap <leader>f :Rg<space>
 " Clean search (highlight)
 nnoremap <silent> <C-l> :noh<CR>
 
-"" Buffer list
+"" Buffers settings
+" List
 nnoremap <silent> <leader>b :Buffers<CR>
-
-"" Close buffer
-nnoremap <leader>w :bp\|bd #<CR>
+" Close
+nnoremap <leader>w :bd<CR>
+" Previous/Next
+nnoremap <C-PageUp> :bp<CR>
+nnoremap <C-PageDown> :bn<CR>
 
 " Copy from clipborad
 vnoremap YY "+y<CR>
