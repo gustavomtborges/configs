@@ -112,10 +112,12 @@ nnoremap <silent> <C-l> :noh<CR>
 " List
 nnoremap <silent> <leader>b :Buffers<CR>
 " Close
-nnoremap <leader>w :bd<CR>
+nnoremap <silent> <leader>w :bd<CR>
 " Previous/Next
-nnoremap <C-PageUp> :bp<CR>
-nnoremap <C-PageDown> :bn<CR>
+nnoremap <silent> <C-PageUp> :bn<CR>
+nnoremap <silent> <C-PageDown> :bp<CR>
+nnoremap <silent> <PageUp> :bn<CR>
+nnoremap <silent> <PageDown> :bp<CR>
 
 " Copy from clipborad
 vnoremap YY "+y<CR>
