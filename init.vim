@@ -67,17 +67,8 @@ set listchars=tab:→\ ,trail:∙,eol:¬
 set cursorline
 " LightLine
 set noshowmode
-" BufferLine
-set showtabline=2
-let g:lightline#bufferline#show_number  = 1
-let g:lightline#bufferline#shorten_path = 0
-let g:lightline#bufferline#unnamed      = '[No Name]'
-
 let g:lightline                  = {}
 let g:lightline.colorscheme      = 'github'
-let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 "" Display
 " Number lines
@@ -113,11 +104,6 @@ nnoremap <silent> <C-l> :noh<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 " Close
 nnoremap <silent> <leader>w :bd<CR>
-" Previous/Next
-nnoremap <silent> <C-PageUp> :bn<CR>
-nnoremap <silent> <C-PageDown> :bp<CR>
-nnoremap <silent> <PageUp> :bn<CR>
-nnoremap <silent> <PageDown> :bp<CR>
 
 " Copy from clipborad
 vnoremap YY "+y<CR>
