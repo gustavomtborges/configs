@@ -27,6 +27,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Comments
 Plug 'preservim/nerdcommenter'
+" CSS Color Highlight
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
