@@ -96,7 +96,7 @@ nnoremap <silent> <F2> :NERDTree<CR>
 
 "" fzf.vim
 " Search files and occurrencies
-nnoremap <C-p> :GFiles<CR>
+nnoremap <C-p> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <leader>f :Rg<space>
 " Clean search (highlight)
 nnoremap <silent> <C-l> :noh<CR>
