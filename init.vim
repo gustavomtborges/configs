@@ -60,8 +60,8 @@ set mouse=a
 set termguicolors
 set background=light
 syntax enable
-let ayucolor = "light" " dark light mirage
-colorscheme solarized8
+let ayucolor = "mirage" " dark light mirage
+colorscheme ayu
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
