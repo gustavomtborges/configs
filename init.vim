@@ -70,7 +70,7 @@ set cursorline
 " LightLine
 set noshowmode
 let g:lightline                  = {}
-let g:lightline.colorscheme      = 'solarized'
+let g:lightline.colorscheme      = 'ayu'
 
 "" Display
 " Number lines
