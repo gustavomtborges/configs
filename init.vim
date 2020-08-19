@@ -61,7 +61,7 @@ set termguicolors
 set background=light
 syntax enable
 let ayucolor = "mirage" " dark light mirage
-colorscheme ayu
+colorscheme github
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -70,7 +70,7 @@ set cursorline
 " LightLine
 set noshowmode
 let g:lightline                  = {}
-let g:lightline.colorscheme      = 'ayu'
+let g:lightline.colorscheme      = 'github'
 
 "" Display
 " Number lines

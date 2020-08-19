@@ -257,7 +257,7 @@ schemes:
       cyan: '#95E6CB'
       white: '#FFFFFF'
 
-colors: *ayu_mirage
+colors: *tango_light
 
 # Colors (Tomorrow Night)
 #colors:
