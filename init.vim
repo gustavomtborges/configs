@@ -12,6 +12,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'Lokaltog/vim-monotone'
 Plug 'lifepillar/vim-solarized8'
 Plug 'cormacrelf/vim-colors-github'
+Plug 'rakr/vim-one'
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -61,7 +62,7 @@ set termguicolors
 set background=light
 syntax enable
 let ayucolor = "mirage" " dark light mirage
-colorscheme github
+colorscheme one
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -70,7 +71,7 @@ set cursorline
 " LightLine
 set noshowmode
 let g:lightline                  = {}
-let g:lightline.colorscheme      = 'github'
+let g:lightline.colorscheme      = 'one'
 
 "" Display
 " Number lines
