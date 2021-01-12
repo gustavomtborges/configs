@@ -9,10 +9,11 @@ Plug 'scrooloose/nerdtree'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'ayu-theme/ayu-vim'
-Plug 'Lokaltog/vim-monotone'
 Plug 'lifepillar/vim-solarized8'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'rakr/vim-one'
+Plug 'drewtempelmeyer/palenight.vim'
+
 " Surround quotes
 Plug 'tpope/vim-surround'
 " Syntax highlight
@@ -62,7 +63,7 @@ set termguicolors
 set background=light
 syntax enable
 let ayucolor = "mirage" " dark light mirage
-colorscheme one
+colorscheme palenight
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -71,7 +72,7 @@ set cursorline
 " LightLine
 set noshowmode
 let g:lightline                  = {}
-let g:lightline.colorscheme      = 'one'
+let g:lightline.colorscheme      = 'palenight'
 
 "" Display
 " Number lines
