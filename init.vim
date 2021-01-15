@@ -1,3 +1,7 @@
+if exists('g:vscode')
+    " VSCode extension
+else
+    " ordinary neovim
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Status bar
@@ -60,10 +64,10 @@ set mouse=a
 
 "" Theming
 set termguicolors
-set background=light
+set background=dark
 syntax enable
 let ayucolor = "mirage" " dark light mirage
-colorscheme palenight
+colorscheme ayu
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -72,7 +76,7 @@ set cursorline
 " LightLine
 set noshowmode
 let g:lightline                  = {}
-let g:lightline.colorscheme      = 'palenight'
+let g:lightline.colorscheme      = 'ayu'
 
 "" Display
 " Number lines
@@ -120,3 +124,4 @@ nmap <silent><leader>gr <Plug>(coc-references)
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
+endif
