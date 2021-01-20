@@ -8,7 +8,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'mengelbrecht/lightline-bufferline'
 " Tree explorer
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 " Themes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
@@ -96,9 +96,10 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
 
 " Remap Esc
 imap jk <esc>
+imap jj <esc>
 
 " NerdTree binds
-nnoremap <silent> <F2> :NERDTree<CR>
+nnoremap <silent> <S-M-e> :NERDTreeToggle<CR>
 
 "" fzf.vim
 " Search files and occurrencies
