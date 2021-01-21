@@ -5,11 +5,16 @@ else
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Status bar
+"
 Plug 'itchyny/lightline.vim'
 Plug 'mengelbrecht/lightline-bufferline'
+
 " Tree explorer
+"
 Plug 'preservim/nerdtree'
+
 " Themes
+"
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'ayu-theme/ayu-vim'
@@ -18,10 +23,13 @@ Plug 'cormacrelf/vim-colors-github'
 Plug 'rakr/vim-one'
 Plug 'drewtempelmeyer/palenight.vim'
 
-" Surround quotes
+" Languages
+"
+Plug 'elixir-editors/vim-elixir'
+
+" Helpers
+"
 Plug 'tpope/vim-surround'
-" Syntax highlight
-"Plug 'sheerun/vim-polyglot'
 " Fuzzy search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -35,6 +43,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 " CSS Color Highlight
 Plug 'ap/vim-css-color'
+Plug 'yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
 
@@ -67,10 +77,12 @@ set termguicolors
 set background=dark
 syntax enable
 let ayucolor = "mirage" " dark light mirage
+let gruvbox_contrast_dark = "hard" " soft medium hard
 colorscheme gruvbox
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
+let g:indentLine_char = '|'
 " Highlight cursor position
 set cursorline
 " LightLine
@@ -98,6 +110,11 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
 imap jk <esc>
 imap jj <esc>
 
+" Save with Ctrl-s
+nnoremap <silent><c-s> :<c-u>update<cr>
+vnoremap <silent><c-s> <c-c>:update<cr>gv
+inoremap <silent><c-s> <c-o>:update<cr>
+
 " NerdTree binds
 nnoremap <silent> <S-M-e> :NERDTreeToggle<CR>
 
@@ -110,7 +127,7 @@ nnoremap <silent> <C-l> :noh<CR>
 
 "" Buffers settings
 " List
-nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> <leader>e :Buffers<CR>
 " Close
 nnoremap <silent> <leader>w :bd<CR>
 
