@@ -22,6 +22,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'rakr/vim-one'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'mhartington/oceanic-next'
 
 " Languages
 "
@@ -43,8 +44,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 " CSS Color Highlight
 Plug 'ap/vim-css-color'
-Plug 'yggdroot/indentLine'
-Plug 'lukas-reineke/indent-blankline.nvim'
+"Plug 'yggdroot/indentLine'
+"Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
 
@@ -78,17 +79,17 @@ set background=dark
 syntax enable
 let ayucolor = "mirage" " dark light mirage
 let gruvbox_contrast_dark = "hard" " soft medium hard
-colorscheme gruvbox
+colorscheme OceanicNext
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
 let g:indentLine_char = '|'
 " Highlight cursor position
-set cursorline
+"set cursorline
 " LightLine
 set noshowmode
 let g:lightline                  = {}
-let g:lightline.colorscheme      = 'gruvbox'
+let g:lightline.colorscheme      = 'oceanicnext'
 
 "" Display
 " Number lines
