@@ -22,7 +22,8 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'rakr/vim-one'
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'mhartington/oceanic-next'
+"Plug 'mhartington/oceanic-next'
+Plug 'adrian5/oceanic-next-vim'
 
 " Languages
 "
@@ -79,7 +80,7 @@ set background=dark
 syntax enable
 let ayucolor = "mirage" " dark light mirage
 let gruvbox_contrast_dark = "hard" " soft medium hard
-colorscheme OceanicNext
+colorscheme oceanicnext
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
