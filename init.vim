@@ -74,7 +74,7 @@ set updatetime=250
 " Use mouse all modes
 set mouse=a
 
-"" Theming
+" Theming
 set termguicolors
 set background=dark
 syntax enable
@@ -87,20 +87,31 @@ set listchars=tab:→\ ,trail:∙,eol:¬
 let g:indentLine_char = '|'
 " Highlight cursor position
 "set cursorline
+"
 " LightLine
 set noshowmode
+set showtabline=2
 let g:lightline                  = {}
 let g:lightline.colorscheme      = 'oceanicnext'
 
-"" Display
+let g:lightline#bufferline#show_number  = 1
+let g:lightline#bufferline#shorten_path = 0
+let g:lightline#bufferline#unnamed      = '[No Name]'
+
+let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type   = {'buffers': 'tabsel'}
+
+" Display
 " Number lines
 set number
 set relativenumber
+
 " NERDTree Configuration
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 50
 
-"" Keybinds
+" Keybinds
 " Map leader to Space
 let mapleader="\<space>"
 
@@ -120,7 +131,7 @@ inoremap <silent><c-s> <c-o>:update<cr>
 " NerdTree binds
 nnoremap <silent> <S-M-e> :NERDTreeToggle<CR>
 
-"" fzf.vim
+" fzf.vim
 " Search files and occurrencies
 nnoremap <C-p> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <leader>f :Rg<space>
@@ -132,6 +143,16 @@ nnoremap <silent> <C-l> :noh<CR>
 nnoremap <silent> <leader>e :Buffers<CR>
 " Close
 nnoremap <silent> <leader>w :bd<CR>
+" Next Previous
+nnoremap <silent> <leader>h :bp<CR>
+nnoremap <silent> <leader>l :bn<CR>
+
+" Git Gutter
+let g:gitgutter_map_keys = 0
+nmap <leader>gs <Plug>(GitGutterStageHunk)
+nmap <leader>gu <Plug>(GitGutterUndoHunk)
+nmap <leader>g] <Plug>(GitGutterNextHunk)
+nmap <leader>g[ <Plug>(GitGutterPrevHunk)
 
 " Copy from clipborad
 vnoremap YY "+y<CR>
