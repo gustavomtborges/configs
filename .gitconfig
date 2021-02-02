@@ -33,3 +33,5 @@
 [mergetool]
 	prompt = false
 	keepBackup = false
+[init]
+	defaultBranch = main
