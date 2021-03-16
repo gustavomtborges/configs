@@ -80,7 +80,7 @@ set background=dark
 syntax enable
 let ayucolor = "mirage" " dark light mirage
 let gruvbox_contrast_dark = "hard" " soft medium hard
-colorscheme ayu
+colorscheme one
 " show chars
 "set list
 set listchars=tab:→\ ,trail:∙,eol:¬
@@ -92,7 +92,7 @@ let g:indentLine_char = '|'
 set noshowmode
 set showtabline=2
 let g:lightline                  = {}
-let g:lightline.colorscheme      = 'ayu'
+let g:lightline.colorscheme      = 'one'
 
 let g:lightline#bufferline#show_number  = 1
 let g:lightline#bufferline#shorten_path = 0
