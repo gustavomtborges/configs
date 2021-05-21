@@ -7,6 +7,10 @@
 	lga = log --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit --date=relative --all
 	cm = commit -v
 	co = checkout
+    sh = switch
+    rs = restore
+    pl = pull
+    pu = push
 	br = branch
 	dw = diff --word-diff
 	ds = diff --staged
