@@ -10,8 +10,9 @@
     sh = switch
     rs = restore
     pl = pull
-    pu = push
+    ph = push
 	br = branch
+    di = diff
 	dw = diff --word-diff
 	ds = diff --staged
 	ft = fetch
