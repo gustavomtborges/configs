@@ -129,7 +129,7 @@ vnoremap <silent><c-s> <c-c>:update<cr>gv
 inoremap <silent><c-s> <c-o>:update<cr>
 
 " NerdTree binds
-nnoremap <silent> <S-M-e> :NERDTreeToggle<CR>
+nnoremap <silent> <C-E> :NERDTreeToggle<CR>
 
 " fzf.vim
 " Search files and occurrencies
