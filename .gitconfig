@@ -9,10 +9,10 @@
 	co = checkout
     sh = switch
     rs = restore
-    pl = pull
-    ph = push
+    pu = pull
+    ps = push
 	br = branch
-    di = diff
+    dd = diff
 	dw = diff --word-diff
 	ds = diff --staged
 	ft = fetch
