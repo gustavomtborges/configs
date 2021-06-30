@@ -35,7 +35,7 @@ window:
   # by DPI and the specified value is always added at both opposing sides.
   padding:
     x: 0
-    y: 0
+    y: 4
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -96,7 +96,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Office Code Pro
+    family: Iosevka SS04
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -293,7 +293,7 @@ schemes:
       foreground: '#abb2bf'
     cursor:
       text:       CellBackground
-      cursor:     '#528bff' # syntax-cursor-color
+      cursor:     '#abb2bf' # syntax-cursor-color
     selection:
       text:       CellForeground
       background: '#3e4451' # syntax-selection-color

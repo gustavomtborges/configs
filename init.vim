@@ -149,7 +149,7 @@ nnoremap <silent> <leader>l :bn<CR>
 
 " Git Gutter
 let g:gitgutter_map_keys = 0
-nmap <leader>gs <Plug>(GitGutterStageHunk)
+nmap <leader>gp <Plug>(GitGutterPreviewHunk)
 nmap <leader>gu <Plug>(GitGutterUndoHunk)
 nmap <leader>g] <Plug>(GitGutterNextHunk)
 nmap <leader>g[ <Plug>(GitGutterPrevHunk)
